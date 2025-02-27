@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -20,11 +21,17 @@ body {
   padding: 0;
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
-
 .gradient-bg {
-  background: rgb(14, 14, 14);
-  background: linear-gradient(90deg, rgba(14, 14, 14, 1) 10%, rgba(46, 46, 46, 1) 55%);
+  background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 18%, 1) 81%, hsla(0, 0%, 17%, 1) 100%);
+}
+
+.orbitron-font {
+  font-family: var(--font-orbitron), sans-serif;
+}
+
+.montserrat-font {
+  font-family: var(--font-montserrat), sans-serif;
 }
