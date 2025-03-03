@@ -1,9 +1,11 @@
 import styles from "./Dashboard.module.css";
 import Image from "next/image";
+import { Component as LineChartComponent } from "@/components/charts/LineChartComponent";
 
 
 export default function Dashboard() {
   return (
+
     <div className="h-screen w-screen p-2 flex gap-10 ">
       <aside className="w-[60px] h-full rounded-[45px] bg-sidebar flex  flex-col justify-between  items-center p-3">
         <div className="">
@@ -157,8 +159,13 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-
+        <div className="w-[45%]">
+          <LineChartComponent
+          />
+        </div>
       </main>
     </div>
+
+
   );
 }
